@@ -59,6 +59,7 @@ void CDrawArconMFCViewusingcdcclassView::OnDraw(CDC* pDC)
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
+	pDC->SetArcDirection(AD_CLOCKWISE);
 	pDC->Arc(40, 20, 226, 144, 155, 32, 202, 115);
 	// TODO: add draw code for native data here
 }
